@@ -1,0 +1,110 @@
+/* Main Container */
+.login_container {
+    -fx-background-color: #f9fafb;
+}
+
+/* Logo Container (Left Panel) */
+.login_logo_container {
+    -fx-background-color: linear-gradient(to bottom right, #FF6B35, #FF3C00);
+    -fx-alignment: center;
+    -fx-padding: 40px;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 4, 0);
+}
+
+/* Form Container (Right Panel) */
+.login_form_container {
+    -fx-background-color: #ffffff;
+    -fx-alignment: center;
+    -fx-padding: 50px;
+}
+
+/* Account Selection */
+.account_selection_container {
+    -fx-alignment: center;
+    -fx-max-width: 350px;
+}
+
+.account_selector {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 14px;
+    -fx-padding: 0 15px;
+}
+
+.account_selector .arrow-button {
+    -fx-background-color: transparent;
+}
+
+/* Form Fields */
+.form_field_container {
+    -fx-spacing: 8px;
+}
+
+.form_label {
+    -fx-text-fill: #4b5563;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+}
+
+.input_field {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 14px;
+    -fx-padding: 0 15px;
+}
+
+.input_field:focused {
+    -fx-border-color: #FF6B35;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 107, 53, 0.2), 5, 0, 0, 2);
+}
+
+/* Buttons */
+.primary_button {
+    -fx-background-color: linear-gradient(to right, #FF6B35, #FF3C00);
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6px;
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;
+}
+
+.primary_button:hover {
+    -fx-background-color: linear-gradient(to right, #FF5A1F, #E63500);
+}
+
+.secondary_button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FF6B35;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+.secondary_button:hover {
+    -fx-text-fill: #FF3C00;
+    -fx-underline: true;
+}
+
+/* Footer */
+.login_footer {
+    -fx-padding: 15px 0 0 0;
+}
+
+.error_lbl {
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 13px;
+    -fx-max-width: 300px;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}
